@@ -7,8 +7,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-public class inventario implements Serializable{
-	
+public class inventario implements Serializable {
+	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int inventario_id;
@@ -18,11 +18,11 @@ public class inventario implements Serializable{
 	private int moeda_prata;
 	private int moeda_bronze;
 	private int moeda_electro;
-	
+
 	public inventario() {
 		super();
 	}
-	
+
 	public inventario(int inventario_id, String descricao_itens, int moeda_platina, int moeda_ouro, int moeda_prata,
 			int moeda_bronze, int moeda_electro) {
 		super();
@@ -110,13 +110,5 @@ public class inventario implements Serializable{
 				+ ", moeda_platina=" + moeda_platina + ", moeda_ouro=" + moeda_ouro + ", moeda_prata=" + moeda_prata
 				+ ", moeda_bronze=" + moeda_bronze + ", moeda_electro=" + moeda_electro + "]";
 	}
-	
-	
-	
-	
-	
 
 }
-
-
-

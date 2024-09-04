@@ -11,7 +11,7 @@
 body{
     border-top: 5px black solid;
     border-bottom: 5px black solid;
-    background-image: url("/frontEnd/src/img/background.png");
+    background-image: url('/src/img/background.png');
     background-size: 100%;
     background-repeat: no-repeat;
     height: 100vh;
@@ -47,10 +47,10 @@ body{
 
 .forms input{
     border-radius: 15px;
-    background-color: #c9c5c5;
+    background-color: #f3f0f0;
     text-align: center;
     height: 35px;
-    width: 200px;
+    width: 250px;
 }
 
 .forms label{
@@ -73,12 +73,35 @@ body{
     height: 450px;
     
 }
-
-anchor-contato{
-transition:all 0.5s ease-in-out;
+.anchor-contato{
+    margin-left: 400px !important; 
+    transition: transform 1s ease;
+    display: flex;
+} 
+.anchor-contato:hover{
+    color: rgb(44, 10, 10);
+    transform: scale(1.2);
 }
 
-anchor-contato:hover,
-anchor-contato:focus{
-    color: rgb(48, 15, 15);
+.anchor-sobre{
+    margin-left: -100px !important; 
+    transition: transform 1s ease;
+    display: flex;
+}
+
+.anchor-sobre:hover{
+    color: rgb(44, 10, 10);
+    transform: scale(1.2);
+}
+
+.anchor-title{
+    transition: transform 1s ease;
+    display: flex;
+}
+.anchor-title:hover{
+    color: rgb(44, 10, 10);
+    transform: scale(1.1);
+}
+.redTrigger{
+    border: 1px solid red;
 }

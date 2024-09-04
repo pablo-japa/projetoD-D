@@ -18,14 +18,14 @@ public class Usuario implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int usuario_id;
 	private String usuario_nome;
-	private int usuario_senha;
+	private String usuario_senha;
 
 	//Cria um construtor vazio
 	public Usuario() {
 		super();
 	}
 	//cria um construtor com todos atributos
-	public Usuario(String usuario_nome, int usuario_senha) {
+	public Usuario(String usuario_nome, String usuario_senha) {
 		super();
 		this.usuario_nome = usuario_nome;
 		this.usuario_senha = usuario_senha;
@@ -48,11 +48,11 @@ public class Usuario implements Serializable {
 		this.usuario_nome = usuario_nome;
 	}
 
-	public int getUsuario_senha() {
+	public String getUsuario_senha() {
 		return usuario_senha;
 	}
 
-	public void setUsuario_senha(int usuario_senha) {
+	public void setUsuario_senha(String usuario_senha) {
 		this.usuario_senha = usuario_senha;
 	}
 
